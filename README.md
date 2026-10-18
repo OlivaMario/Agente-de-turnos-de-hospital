@@ -8,6 +8,7 @@
 - [Diagrama UML de casos de uso](#-diagrama-uml-de-casos-de-uso)
 - [Flujos y control](#-flujos-sistema-abierto)
 - [Preguntas de investigación](#-preguntas-de-investigación)
+- [Integración](07-integracion/integracion.md)
 
 ## 📌 Descripción
 Los pacientes necesitan reservar turnos médicos, pero la información sobre requisitos, horarios y coberturas está dispersa en distintos sistemas y documentos. Esto genera demoras, errores y consultas repetidas.
