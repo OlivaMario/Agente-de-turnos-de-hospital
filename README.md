@@ -30,6 +30,7 @@ El agente debe derivar a personal humano cuando la consulta exceda su alcance.
   - Conversión: interpretar la consulta, verificar requisitos, contrastar con normativa, generar orientación.  
   - Salida: respuesta fundamentada con requisitos, disponibilidad y fuentes.  
   - Feedback: validación administrativa, corrección de errores, registro de consultas.  
+  ![Diagrama de flujos](03-flujos-y-control/diagrama.png)
 
 ## ❓ Preguntas de investigación
 1. ¿Qué información puede usar el agente sin comprometer la privacidad del paciente?  
