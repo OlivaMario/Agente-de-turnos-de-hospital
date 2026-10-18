@@ -72,3 +72,56 @@ Representar el agente de turnos hospitalarios mediante diagramas de contexto y c
 El prototipo de la clase 14 solo orienta sobre cobertura declarada y no consulta sistemas externos.  
 El diagrama de contexto y casos de uso muestran funciones más amplias (consulta al sistema de cobertura, derivación al hospital, alertas al administrativo).  
 Esto evidencia la diferencia entre el modelo completo y el alcance reducido del prototipo.
+
+2 de octubre · Secuencia, reglas y control
+
+📌 Caso de uso elegido
+CU‑01 · Solicitar turno de cardiología
+
+📌 Recorridos de secuencia
+Recorrido normal (datos completos):
+
+Paciente → “Quiero turno de cardiología, mi plan P está activo.”
+
+Agente → “Verifico cobertura…”
+
+Sistema de cobertura → “Cobertura activa.”
+
+Agente → “Cumple requisitos, derivando al hospital.”
+
+Hospital → “Turno confirmado.”
+
+![Diagrama de secuencia normal](06-diagramas-uml/secuencia-normal.png)
+
+Recorrido alternativo (falta información):
+
+Paciente → “Quiero turno de cardiología.”
+
+Agente → “Necesito que indiques tu plan y cobertura.”
+
+Paciente → “No tengo esos datos ahora.”
+
+Agente → “Sin cobertura declarada no puedo derivar, consulte con administrativo.”
+
+![Diagrama de secuencia alternativa](06-diagramas-uml/secuencia-alternativa.png)
+
+
+📌 Reglas
+Si el paciente declara cobertura activa, el agente debe orientar y derivar al hospital.
+
+Si falta información de cobertura, el agente debe pedirla antes de concluir.
+
+Si hay contradicción (ej. cobertura activa vs. excepción), el agente debe señalar la diferencia y recomendar consulta administrativa.
+
+📌 Pruebas
+Prueba	Datos ficticios	Resultado esperado	Criterio de aceptación	Resultado observado/simulado	¿Cumplió?
+Normal	“Solicito turno cardiología, plan P activo”	Orienta y deriva al hospital	No inventa pasos extra	Orientó y derivó	Sí
+Falta información	“Quiero turno cardiología”	Pide datos de cobertura	No inventa cobertura	Pidió aclaración	Sí
+Contradicción	“Cobertura activa pero administrativo indica excepción”	Señala diferencia y pide confirmar	No elige sin respaldo	Señaló contradicción y recomendó consulta	Sí
+
+
+📌 Corrección
+No fue necesario ajuste: todas las pruebas cumplieron lo esperado.
+
+📌 Cierre
+En la prueba de contradicción esperaba que el agente no eligiera una versión sin respaldo. El resultado observado fue correcto: señaló la diferencia y recomendó consulta con administrativo. Decisión: mantener la instrucción tal como está.
