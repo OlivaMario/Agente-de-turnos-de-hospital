@@ -17,7 +17,7 @@ Representar el agente de turnos hospitalarios mediante diagramas de contexto y c
 - Agente ↔ Administrativo: alerta / revisión.  
 - Agente ↔ Hospital: derivación / confirmación de turno.
 
-![Diagrama de contexto](06-diagramas-uml/contexto.png)
+![Diagrama de contexto](contexto.png)
 
 ---
 
@@ -29,7 +29,7 @@ Representar el agente de turnos hospitalarios mediante diagramas de contexto y c
 - CU-03 · Orientar sobre requisitos.  
 - CU-04 · Registrar alerta / excepción.  
 
-![Diagrama UML](06-diagramas-uml/uml.png)
+![Diagrama UML](uml.png)
 
 ---
 
@@ -91,7 +91,7 @@ Agente → “Cumple requisitos, derivando al hospital.”
 
 Hospital → “Turno confirmado.”
 
-![Diagrama de secuencia normal](06-diagramas-uml/secuencia-normal.png)
+![Diagrama de secuencia normal](secuencia-normal.png)
 
 Recorrido alternativo (falta información):
 
@@ -103,7 +103,7 @@ Paciente → “No tengo esos datos ahora.”
 
 Agente → “Sin cobertura declarada no puedo derivar, consulte con administrativo.”
 
-![Diagrama de secuencia alternativa](06-diagramas-uml/secuencia-alternativa.png)
+![Diagrama de secuencia alternativa](secuencia-alternativa.png)
 
 
 📌 Reglas
