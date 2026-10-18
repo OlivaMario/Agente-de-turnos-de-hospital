@@ -49,3 +49,11 @@ En las cinco pruebas realizadas, el asistente cumplió con el alcance definido e
 - Mantuvo la regla R1 sin inventar requisitos ni ignorarla.  
 
 No fue necesario realizar ajustes, ya que todas las respuestas coincidieron con los resultados esperados. La comprobación confirma que el prototipo respeta las reglas de organización y control definidas en el análisis sistémico.
+
+## 🔄 Relaciones con clases anteriores
+
+- **Clase 12 (cap. 7 – Frontera y área gris):** el prototipo delimita qué está dentro (recepción de consulta, regla de cobertura, orientación) y qué queda fuera (registros oficiales, autorización de turnos). Los antecedentes son declarados por el paciente, no verificados institucionalmente.  
+- **Clase 12 (cap. 9 – Retroalimentación):** cada prueba funciona como un ciclo de control: se observa la respuesta, se compara con lo esperado y se decide si ajustar instrucciones.  
+- **Clase 13 (cap. 10 – Estructura y organización):** la regla “no autorizar turnos” es organizativa, no estructural. La interfaz, las instrucciones y el modelo participan en la respuesta.  
+- **Clase 13 (cap. 11 – Control):** se aplicó el esquema de referencia, observación, comparación y acción en las pruebas. El estudiante decide si ajustar las instrucciones.  
+- **Clase 13 (cap. 12 – Modelo y supuestos):** se revisó el supuesto de acceso a registros hospitalarios oficiales, ya que el prototipo solo trabaja con datos declarados por el paciente.
